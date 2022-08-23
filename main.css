@@ -3,10 +3,14 @@ color: rgb(32, 93, 32);
 font-size: 80px;
 }
 p {
-color:rgb(47, 101, 47);
+color:rgb(70, 70, 70);
 font-size: large;
 }
 h2 {
     font-size: larger;
-    color: rgb(55, 114, 56);
+    color: rgb(58, 58, 58);
+}
+
+img {
+width: 90px;
 }
