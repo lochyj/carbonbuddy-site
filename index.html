@@ -1,13 +1,37 @@
 <!DOCTYPE html>
+
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Buddy</title>
     <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
+      </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+      * {
+        font-family: 'Dela Gothic One', sans-serif;
+      }
+
+      :root {
+        --accent: rgb(32, 93, 32);
+      }
+
       body {
-        font-family: 'Courier New', monospace;
+        font-family: 'Dela Gothic One', sans-serif;
         background-color: rgb(222, 255, 225);
       }
       h1 {
-        color: rgb(32, 93, 32);
+        color: var(--accent);
         font-size: 80px;
       }
       p {
@@ -35,31 +59,91 @@
         justify-content: center;
         align-items: center;
       }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .padder {
+        padding-top: 15vh;
+      }
     </style>
   </head>
-<body>
-  <div class="header">
-  <div class="center">
-    <img src="Leaf.png" alt="leaf"><br>
-  </div>
-  <h1><span class="center"><strong>CarbonBuddy</strong></span></h1>
- </div>
+  <body>
+    
+    <div class="wrapper center">
+      <div class="header">
+        <img src="Leaf.png" alt="leaf"><br>
+        <h1>
+          <strong>
+              CarbonBuddy
+          </strong>
+        </h1>
+      </div>
+        
+      <h2>
+        Carbon buddy is here to help you reduce your carbon footprint.<br>Just follow the three easy steps to reduce your impact on the environment.
+      </h2><br>
+
+      <div class="padder"></div>
+      <div class="padder"></div>
+
+      <strong>
+        Show me how!
+      </strong><br>
+      <svg onclick="window.location.href = window.location.href.split('#')[0] + '#more'" xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="black"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
+
+      <div class="padder"></div>
+
+      <!-- Heading -->
+      <h1>How does it work?</h1>
+      <!-- / Heading -->
+
+      <h2 id="more">
+        <strong>
+          1. Take the quiz!
+        </strong><br>
   
+        <strong>
+          2. Answer honestly
+        </strong><br>
+  
+        <strong>
+          3. Listen to the suggestions!
+        </strong><br>
+      </h2>
 
-<h2><span class="center">To help you reduce your carbon footprint in 3 easy steps!</span></h2>
-<br>
+      <!-- Heading -->
+      <h1>Information</h1>
+      <!-- / Heading -->
 
-<span class="center"><p><strong>1. Take the quiz!</strong></p></span>
-<span class="center"><p><strong>2. Answer honestly</strong></p></span>
-<span class="center"><p><strong>3. Listen to the suggestions!</strong></p></span>
-<br>
-<br>
-<span class="center"><img src="co2.png" alt="Co2 Logo"></span>
-<br>
-<span class="center"><h1>Information</h1></span>
-<span class="center"><h2><strong>Target audience:</strong> People interested in lowering their carbon footprint.</h2></span>
-<span class="center"><h2><strong>Goal:</strong> To help stop carbon pollution by making people more aware of their effects on the enviroment.</h2></span>
-<span class="center"><h2><strong>Description:</strong> CarbonBuddy is an application which gives you daily surveys about your carbon footprint. The app builds a profile based on your answers and gives you daily recommendations and tips to help lower your carbon footprint.</h2></span>
-<span class="center"><h2>Our survey is on google classroom. Please fill it out and help us improve our product.</h2></span>
-</body>
+      <h2>
+        <strong>
+          Target audience:
+        </strong><br>
+        People interested in lowering their carbon footprint.
+      </h2>
+
+      <h2>
+        <strong>
+          Goal:
+        </strong><br>
+        To help stop carbon pollution by making people more aware of their effects on the enviroment.
+      </h2>
+
+      <h2>
+        <strong>
+          Description:
+        </strong><br>
+        CarbonBuddy is an application which gives you daily surveys about your carbon footprint. The app builds a profile based on your answers and gives you daily recommendations and tips to help lower your carbon footprint.
+      </h2>
+      <h2>
+        <br>
+        <strong>
+          Our survey is on google classroom. Please fill it out and help us improve our product.
+        </strong>
+      </h2>
+    </div>
+
+  </body>
 </html>
